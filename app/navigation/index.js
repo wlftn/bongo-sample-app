@@ -13,6 +13,10 @@ angularModule.config(['$stateProvider', function($stateProvider) {
             url: '/home',
             templateUrl: 'home.html'
         })
+        .state('favorites', {
+            url: '/favoritesPage',
+            templateUrl: 'favoritesPage.html'
+        })
         .state('about', {
             url: '/about',
             templateUrl: 'about.html'

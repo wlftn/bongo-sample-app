@@ -1,0 +1,17 @@
+
+
+<div ng-if="loading"> Loading... </div>
+<div ng-if="!loading"> 
+
+  <button class="btn btn-default btn-lg star-button" type="button" ng-click="makeFavorite()">
+    <span class="glyphicon glyphicon-star-empty" ng-if="!isfavorite"></span>
+    <span class="glyphicon glyphicon-star" ng-if="isfavorite"></span>
+  </button>
+
+
+  <h3> {{stop.stoptitle}} </h3>
+
+  <div class="well">
+    <p> Estimated time until next bus arrives... [not implemented]</p>
+  </div>
+</div>  

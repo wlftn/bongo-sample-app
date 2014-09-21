@@ -1,6 +1,10 @@
-div
-  bus-stop(stop-id='7213')
-div
-  bus-stop(stop-id='7214')
-div
-  bus-stop(stop-id='7215')
+span(class="search")
+  h2 Search by Stop
+  input(type="text" ng-model="stopId"  size="30" placeholder="Which stop you want?")
+  input(class="btn-primary" type="submit" value="add")
+
+bus-stop(stop-id="stopId")
+
+h1 Favorites
+favorites
+
